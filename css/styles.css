@@ -1,0 +1,21 @@
+body {
+  color: #ddd;
+  background-color: #111;
+}
+
+.jumbotron {
+  color: #ddd;
+  background-color: #444;
+}
+
+.form-control {
+  background-color: #555;
+}
+
+.form-control:hover {
+  background-color: green;
+}
+
+button {
+  margin-top: 15px;
+}
