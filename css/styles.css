@@ -12,8 +12,8 @@ body {
   background-color: #555;
 }
 
-.form-control:hover {
-  background-color: green;
+.form-control:focus {
+  background-color: #bbb;
 }
 
 button {

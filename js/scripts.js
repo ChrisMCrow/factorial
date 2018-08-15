@@ -22,15 +22,16 @@ function removeSpace(value) {
 }
 
 function forward(input) {
-	var inputArray = input.split("");
+	var inputLowerCase = input.toLowerCase();
+	var inputArray = inputLowerCase.split("");
 	var arrayFiltered = inputArray.filter(removeSpace);
 	return arrayFiltered.join("");
 }
 
 function backward(input) {
+	var input = forward(input);
 	var inputArray = input.split("");
-	var arrayFiltered = inputArray.filter(removeSpace);
-	var arrayReversed = arrayFiltered.reverse();
+	var arrayReversed = inputArray.reverse();
 	return arrayReversed.join("");
 }
 
@@ -58,23 +59,3 @@ $(document).ready(function() {
 		$("#palindromeOutput").append(palindromeInput + palindromeFunction(palindromeInput));
 	});
 });
-
-
-//palindromeprompt-->
-
-
-// function palindrome(x) {
-//   var xArray = x.split("");
-//   var yArray = xArray.reverse()
-//   var y = yArray.join("");
-// 	if (x === y) {
-// 		alert(true)
-//   } else if (x != y) {
-//  		alert(false)
-//   }
-// }
-//
-//
-//
-// var userInput = prompt("does this work?");
-//  palindrome(userInput)
